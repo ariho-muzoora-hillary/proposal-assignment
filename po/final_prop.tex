@@ -1,0 +1,587 @@
+%%%%%%%%%%%%  Generated using docx2latex.com  %%%%%%%%%%%%%%
+
+%%%%%%%%%%%%  v2.0.0-beta  %%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+% If you are compiling in your own LaTeX editor and this 
+ %part of code is throwing error then remove following few lines of code before \usepackage{subfig}
+\usepackage[backend=biber,
+style=numeric,
+sorting=ynt
+]{biblatex}\addbibresource{bibliography.bib}
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[paperheight=11.0in,paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,headheight=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+\tikzset{>={Latex[width=1.5mm,length=2mm]}}
+\usepackage{flowchart}\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,}
+
+\urlstyle{same}
+
+
+ %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+% 1) Section
+% 1.1) SubSection
+% 1.1.1) SubSubSection
+% 1.1.1.1) Paragraph
+% 1.1.1.1.1) Subparagraph
+
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+ %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+
+\setlistdepth{9}
+\renewlist{enumerate}{enumerate}{9}
+	\setlist[enumerate,1]{label=\arabic*)}
+	\setlist[enumerate,2]{label=\alph*)}
+	\setlist[enumerate,3]{label=(\roman*)}
+	\setlist[enumerate,4]{label=(\arabic*)}
+	\setlist[enumerate,5]{label=(\Alph*)}
+	\setlist[enumerate,6]{label=(\Roman*)}
+	\setlist[enumerate,7]{label=\arabic*}
+	\setlist[enumerate,8]{label=\alph*}
+	\setlist[enumerate,9]{label=\roman*}
+
+\renewlist{itemize}{itemize}{9}
+	\setlist[itemize]{label=$\cdot$}
+	\setlist[itemize,1]{label=\textbullet}
+	\setlist[itemize,2]{label=$\circ$}
+	\setlist[itemize,3]{label=$\ast$}
+	\setlist[itemize,4]{label=$\dagger$}
+	\setlist[itemize,5]{label=$\triangleright$}
+	\setlist[itemize,6]{label=$\bigstar$}
+	\setlist[itemize,7]{label=$\blacklozenge$}
+	\setlist[itemize,8]{label=$\prime$}
+
+\setlength{\topsep}{0pt}\setlength{\parskip}{8.04pt}
+\setlength{\parindent}{0pt}
+
+ %%%%%%%%%%%%  This sets linespacing (verticle gap between Lines) Default=1 %%%%%%%%%%%%%%
+
+
+\renewcommand{\arraystretch}{1.3}
+
+
+%%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+MAKERERE UNIVERSITY\par
+
+DEPARTMENT OF COMPUTER SCIENCE\par
+
+SCHOOL OF COMPUTING AND INFORMATICS TECHNOLOGY\par
+
+COURSE UINT: BIT2207 Research Methodology\par
+
+TITLE: \textbf{HIV/AIDS PATIENT MANAGEMENT WEB SYSTEM.}\par
+
+\textbf{(CASE STUDY: TASO, Uganda)}\par
+
+By\par
+
+\setlength{\parskip}{0.0pt}
+ \tabto{0.25in}  \tabto{0.5in}  \tabto{0.75in}  \tabto{1.0in}  \tabto{1.25in}  \tabto{1.5in}  \tabto{1.75in}  \tabto{2.0in}  \tabto{2.25in}  \tabto{2.5in} Group: ANNEX\par
+
+
+\vspace{\baselineskip}\setlength{\parskip}{8.04pt}
+\section{Introduction}
+Based on a study research, it’s to our notice that HIV/AIDS patients in Uganda have challenges of lack of convenience in; making appointments, informing Doctors about their current health status, and having regular interactive updates with the Doctors. As a result; the concept of a health web system shall improve on the patient’s access to health services.\par
+
+From our research study, it should be noted that; The Aids Support Organization (TASO) Uganda, Hospitals, Clinics and other Non-Government Organizations (NGO’s) have always played a supportive role towards the Ugandan Aids Community. However a majority of victims encounter several challenges while trying to access their routinely health services, at the support centers. Therefore it has always been very inconveniencing and unreliable, for majority of patients to request for extra support services, at the support centers.\par
+
+We look towards; designing a secure web system, in which the users i.e. Doctors, Patients and other health attendants, shall be required to use their usernames and passwords (user credentials) to log into their respective user accounts of the system, before eventually viewing their confidential information. This is because most; HIV/AIDS patients prefer to have their health status information kept confidential, and would only share it to people they trust e.g. their relatives, friends and health attendants. Therefore with the use of authentication parameters and other security controls, the system shall be designed to be secure against potential risks of attack on the confidentiality of the HIV/AIDS patients’ information.\par
+
+With the rapid development in communication technologies globally, the cost of communication hardware is diminishing steadily. This means a vast majority of Ugandan users (e.g. the HIV/AIDS community) can afford and have access to the communication hardware devices. Therefore there is need and demand of more useful software applications that can run on these devices e.g. the Aids Patient management system that we are proposing in this project.\par
+
+\section{Problem Statement}
+Aids patients face a problem of accessing their health services conveniently. They line up in long queues trying to access health services, making appointments and some have negative stigma, given their HIV/AIDS status. \par
+
+Indeed patient health is on the vogue of deterioration, due to the cumbersome challenges they face, day-in and day-out. Therefore given their status, they have increasing levels of stress buildup and this is contributing to their kill factor.\par
+
+\section{Objectives}
+Main objective\par
+
+We are going to address the problem stated above, by designing and developing a web application called; Aids Patient Management system using some server side scripting languages, with vast features to enable authentic patients and health attendants, securely request, view and manipulate authentic information using the web. \par
+
+\subsection{Specific Objective}
+
+\vspace{\baselineskip}
+\setlength{\parskip}{0.0pt}
+\begin{enumerate}
+	\item We are going to conduct more research about data formats for any kind of user information and at the end of this stage.\par
+
+	\item Given the specifications produced in the first stage, we shall design data models for the complete system.\par
+
+	\item Develop the Aids Patient Management system. \par
+
+	\item We shall carry out continuous tests on the web application at the end of each stage of core development activities. The tests shall be simulated towards satisfying the functional requirements of the web application. Since this is going to be a recursive development process, any errors found, prior to system testing, shall be reviewed to help ascertain the requirements specifications, system design and system implementation.\par
+
+	\item Documentations shall be done for all the development phases of the software application. During development, we shall comment our program code to help simplify the documentation process of the project, and its detailed report.
+\end{enumerate}\par
+
+\setlength{\parskip}{8.04pt}
+\section{Scope}
+The web application we are to develop in this project will enable the HIV/AIDS community, and their health attendants in Uganda, access health services and information, by interactively manipulating the application on their desktop.\par
+
+The application shall require internet connection as a means of communication to the cloud server of the information system. This therefore means that; the user can access their information, make appointments, and do consultancies provided they have access to internet. \par
+
+\section{Significance of the Project}
+At the end of the project we shall have a fully functional web application, designed to run on desktop devices, We expect a huge positive impact on the way how HIV/AIDS community will access their information with convenience and in time. The congestions at the health centers will be reduced because most of them will be using their desktop devices to access most of their services. \par
+
+The entire project phases, involve core software engineering processes, serious practical application of computer science knowledge such as designing data structures, coming up with optimized computer algorithms for practical problems, data storage and network application development. All this knowledge will require extensive research and hands on application of this knowledge and skills, as we progress to other phases of the project. We are absolutely sure that we shall have gained fairly enough experience in solving real life problems, by applying computer science skills in developing the web server system.\par
+
+\section{Literature Review}
+This section discuses relevant theories and practical knowledge about already existing applications with similar concept as the one we shall conduct in this project. \par
+
+\setlength{\parskip}{3.0pt}
+\subsection*{Information Systems}
+\addcontentsline{toc}{subsection}{Information Systems}
+\setlength{\parskip}{8.04pt}
+The transformation of information into knowledge has been the goal of various civilizations since the beginning of time, as knowledge has been perceived to equate to power; but unfortunately the possession of vast amounts of information does not equally equate to sweeping knowledge acquisition. Information needs to be organized, processed and available in the right format to become useful. For this, throughout time, people have invented methods and tools to organize and manage information on their behalf. \par
+
+An Information System is a collection of people, procedures, and equipment designed, constructed, operated, and maintained to collect, record, process, store, retrieve, and display information  (Ralston, 2003).\ Nowadays,\ Information\ Systems\ make\ use\ \ of\ \ Information\ \ Technology\ and\ Communication\ Technology\ \ (these\ \ are  sometimes  referred  to  as  computer-based information  systems  (CBIS)  to  distinguish  them  from  earlier  i.e. manual systems).\par
+
+Information\ \ technology\ \ (IT)\ \ is\ \ defined\ \ as\ \ "a\ \ microelectronics-based\ \ combination\ \ of computing  and  telecommunications  used  for  the  acquisition,  processing,  storage  and dissemination of vocal, pictorial, textual and numerical information" .\par
+
+\setlength{\parskip}{3.0pt}
+\subsection*{Mobile Computing}
+\addcontentsline{toc}{subsection}{Mobile Computing}
+\setlength{\parskip}{8.04pt}
+Mobile computing, according to Wikipedia, is a human–computer interaction by which a user moves with their mobile computer device to enable normal usage (Wikipedia, 2015). Cell phones today are built with high computer processing capabilities, compared to the past enabling them to do more things on top of their ordinary functions initially they were designed for. \par
+
+Applying the theory behind mobile technology, we shall use existing high level programming language tools to produce a mobile application with greater computing power to enable communication with a main remote server, in which data is stored.\par
+
+\subsubsection*{Data Exchange across Mobile Applications}
+\addcontentsline{toc}{subsubsection}{Data Exchange across Mobile Applications}
+Data exchange is the process of taking data structured under a source schema and transforming into data structured under target schemas. It’s related to the concept of data integration, except that data is restructured in data exchange  (Wikipedia, Data\_exchange, 2014). There are a couple of popular languages through which data can be exchanged across applications and these include: \par
+
+\begin{enumerate}
+	\item JavaScript Object Notables: This was developed as part of JavaScript Language \par
+
+	\item Extensible Markup Language (XML).\par
+
+	\item  Resource Description Framework: This is a family of World Wide Web originally designed as metadata and it’s now widely used in conceptual modeling of information that is implemented on web resource .
+\end{enumerate}\par
+
+ (Wikipedia, Resource\_Description\_Framework, 2015).\  \par
+
+The mobile application we are to develop in this project will require use of any of the above languages such that it communicates with the server application that will host data to be accessed. The information to be sent from the mobile application will be structured to include authentication parameters used by the server-side and the server side application will return data in the same format which is to be interpreted by the mobile application.\par
+
+\setlength{\parskip}{3.0pt}
+\subsection*{Electronic Medical Record system (EMR) case studies}
+\addcontentsline{toc}{subsection}{Electronic Medical Record system (EMR) case studies}
+\setlength{\parskip}{8.04pt}
+It is probably no exaggeration to say that a large number of countries have expressed a clear interest in electronic medical record systems and have their own experience in using it in their health practices.\par
+
+An electronic medical record system allows for the management and collection of health information from patients e.g. HIV/AIDS patients, for the positive benefit of improving work flows  (C.M. Oliveira, Dec 2013). \par
+
+Natural disasters like; Hurricane Katrina in the United States of America underlined the reality and effects of inefficiently stored medical paper records of scores of patients  (F. Williams, 2008).\  Because of this disastrous calamity, the Obama administration implemented national-wide electronic health care management programs/systems costing $\$$ 2.4 trillion dollars to the healthcare industry.\par
+
+A study carried in 2011; indicates 57$\%$  of health physicians in the United States of America using Electronic Medical Records systems (EMR)  (C. Hsiao, 2011). Though this figure is not representative of other countries, it gives an idea of how much attention is given to the use of EMR systems.\par
+
+\subsubsection*{EMR system Opportunities}
+\addcontentsline{toc}{subsubsection}{EMR system Opportunities}
+EMR systems efficiently manage patient records  (K.G. Shah, 2013), minimize error data entries i.e. ensures consistent formats and generate comprehensive reports on patient histories and services  (B.G. Druss, March 2014).\par
+
+EMR\ systems facilitate instant communication between several actors enabling information verification for better medication provisions, thus improved quality of patient care  and safety because required information is accessed at the right time. Reporting mechanisms allow medical practitioners serve more patients than they normally do.\par
+
+\section{Methodology}
+\setlength{\parskip}{3.0pt}
+\subsection*{Introduction \hspace*{10pt}}
+\addcontentsline{toc}{subsection}{Introduction \hspace*{10pt}}
+\setlength{\parskip}{8.04pt}
+This section comprises of research/project design which describes the tools, instruments, approaches, processes and techniques, major algorithms and data structures to be employed in the research study, data collection, analysis, synthesis, design, logical flow, implementation, testing, and validation\par
+
+\setlength{\parskip}{3.0pt}
+\subsection*{System study}
+\addcontentsline{toc}{subsection}{System study}
+\setlength{\parskip}{8.04pt}
+The already existing health management systems have been reviewed and studied enabling the determination of functional and non-functional requirements. \par
+
+Data Collection Techniques \par
+
+This\ explains the techniques we used to gather the required information to be used to develop the new system.  \par
+
+\subsubsection*{Questionnaires}
+\addcontentsline{toc}{subsubsection}{Questionnaires}
+We are to come up with printed questionnaires that will be issued to people, HIV/AIDS communities and TASO support staff, from whom we shall get information about patient health and challenges. The questionnaires act as an effective tool for determining the effectiveness of existing systems in supporting and managing HIV/AIDS patients access to health services, personal information and managing their appointments e.g. reminder tools with doctors. \par
+
+Interviews\par
+
+In this method we shall carry out interviews with people, doctors, TASO agents and some HIV/AIDS patients. \par
+
+\subsubsection*{Review of existing information}
+\addcontentsline{toc}{subsubsection}{Review of existing information}
+We shall review the existing documents to enable us understand the current HIV/AIDS support systems and got literature on application techniques currently used. This method will provide us with information from various sources and help us to understand the system with a better perspective of design and development.\par
+
+\subsection{Functional Requirements for the web Application}
+Minimum Functional Requirements of the web Application will include the following:\par
+
+\begin{enumerate}
+	\item The application shall provide authentication service as a security feature to control unidentified access to the main server system. The user will be required to enter username and password in order to log into their account on the main system. If it’s installed for the first time, the user should be prompted to register for an account.\par
+
+	\item The application shall be able to list available health attendants from which the patient can select one, leading them to another list of services. \par
+
+	\item Given a health attendant, the application should show their detailed information from which a patient can choose to consult or make an appointment with. \par
+
+	\item The web application shall provide a search utility for the user to search for particular information they need from the database for which they can add to their favorites in the locally stored files on their computers.
+\end{enumerate}\par
+
+
+\vspace{\baselineskip}
+\subsection{Modeling the System}
+From the gathered data, we shall extract more relevant information that will enable us develop models for the systems we have in minds. We shall produce Data Flow Diagrams (DFD) to illustrate and describe various stages and sections of the main system. Data Flow Diagrams will convey clear paths showing exactly how data shall move in the system. \par
+
+\textbf{System Context diagram.}\par
+
+
+\vspace{\baselineskip}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+	\begin{Center}
+		\includegraphics[width=4.7in,height=4.08in]{./media/image1.png}
+	\end{Center}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 Ends here %%%%%%%%%%%%%%%%%%%%
+
+\par
+
+Process modeling\par
+
+Process modeling presents a formal description of how the system operates.\par
+
+\setlength{\parskip}{0.0pt}
+This is achieved through sequence diagrams and use cases diagrams. \par
+
+The table describes the different symbols used in the sequence diagrams and use case diagrams.\par
+
+
+\vspace{\baselineskip}\textbf{ Symbols used in sequence diagram.}\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.83in}p{1.96in}p{1.97in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.83in}}{Symbol} & 
+\multicolumn{1}{|p{1.96in}}{Name} & 
+\multicolumn{1}{|p{1.97in}|}{Description} \\
+\hhline{---}
+%row no:2
+\multicolumn{1}{|p{1.83in}}{\par 
+ \begin{tikzpicture}
+
+\draw (0.86in,-0.36in) ellipse [x radius=0.14in, y radius=0.29in];} & 
+\multicolumn{1}{|p{1.96in}}{
+\end{tikzpicture}
+An actor } & 
+\multicolumn{1}{|p{1.97in}|}{This is an individual or system that makes the use of the system} \\
+\hhline{---}
+%row no:3
+\multicolumn{1}{|p{1.83in}}{\par 
+ \begin{tikzpicture}
+
+\draw (0.8in,-0.35in) ellipse [x radius=0.62in, y radius=0.14in];} & 
+\multicolumn{1}{|p{1.96in}}{
+\end{tikzpicture}
+Processes} & 
+\multicolumn{1}{|p{1.97in}|}{This describes the activity that is going on a given system} \\
+\hhline{---}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 1 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+\setlength{\parskip}{8.04pt}
+\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{1.85in}p{1.95in}p{1.96in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{1.85in}}{Symbol} & 
+\multicolumn{1}{|p{1.95in}}{Name } & 
+\multicolumn{1}{|p{1.96in}|}{Description} \\
+\hhline{---}
+%row no:2
+\multicolumn{1}{|p{1.85in}}{\par 
+ \begin{tikzpicture}
+
+\path (0.87in,-0.48in) node [shape=rectangle,draw={rgb:red,0;green,0;blue,0},fill={rgb:red,255;green,255;blue,255},minimum height=0.79in,minimum width=0.68in,]{};
+} & 
+\multicolumn{1}{|p{1.95in}}{
+\end{tikzpicture}
+An object} & 
+\multicolumn{1}{|p{1.96in}|}{An object from a sequence diagram is rendered as a box with a dashed line descending from it. The line is called the object lifeline and it represents the existence of an object over a period of time.} \\
+\hhline{---}
+%row no:3
+\multicolumn{1}{|p{1.85in}}{\par 
+ \begin{tikzpicture}
+
+\draw [->] (0.47in,-0.19in) -- (1.43in,-0.19in); 
+} & 
+\multicolumn{1}{|p{1.95in}}{
+\end{tikzpicture}
+Messages } & 
+\multicolumn{1}{|p{1.96in}|}{Messages are rendered as horizontal arrows being passed from object to object as time advances down the lifelines. They indicate when the message has passed. } \\
+\hhline{---}
+%row no:4
+\multicolumn{1}{|p{1.85in}}{\par 
+ \begin{tikzpicture}
+
+\begin{scope}[yscale=-1,xscale=1,yshift=0.18in]
+	\draw [->] (0.56in,-0.09in) -- (1.36in,-0.09in); 
+\end{scope}
+} & 
+\multicolumn{1}{|p{1.95in}}{
+\end{tikzpicture}
+Return from previous message.} & 
+\multicolumn{1}{|p{1.96in}|}{This is a dashed arrow showing a return from previous messages and not new message} \\
+\hhline{---}
+%row no:5
+\multicolumn{1}{|p{1.85in}}{
+	\begin{Center}
+		\includegraphics[width=86.25pt,height=24pt]{./media/image2.pdf}
+	\end{Center}
+} & 
+\multicolumn{1}{|p{1.95in}}{Self-delegation} & 
+\multicolumn{1}{|p{1.96in}|}{This is a way of validating an action.} \\
+\hhline{---}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\subsubsection*{Use case diagram of the system.\ \  }
+\addcontentsline{toc}{subsubsection}{Use case diagram of the system.\ \  }
+\setlength{\parskip}{0.0pt}
+This was used to show how the users interact with the system.\par
+
+\par
+
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}\textbf{Use Case Diagram for HIV/AIDS Patient}\par
+
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}\par 
+ \begin{tikzpicture}
+
+\draw (3.21in,-3.23in) ellipse [x radius=3.79in, y radius=3.1in]node [text width=7.37in,align=center]{Views Profile};
+
+\end{tikzpicture}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}\textbf{Use Case Diagram for Medical Practitioner}\par
+
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}\par 
+ \begin{tikzpicture}
+
+\draw (3.21in,-3.24in) ellipse [x radius=3.79in, y radius=3.11in]node [text width=7.37in,align=center]{Views Profile};
+
+\end{tikzpicture}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\setlength{\parskip}{8.04pt}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\subsection{Core Development }
+
+\vspace{\baselineskip}
+We are also looking at defining and developing an Application Programming Interface \cite{Wik15} through which a system administrator would configure it to allow requests to be directed to authentic external sources, though this will be looked at the secondary stage after core functional requirements are fully developed and given there is still time before the end of project duration.\par
+
+\subsection*{Testing}
+\addcontentsline{toc}{subsection}{Testing}
+We shall carry out some end to end test and compare with functional requirements for our main system. Any errors encountered will be fixed and the application will be tested continuously until we are absolutely certain that the system satisfies the functional requirements.\par
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\par
+
+Boulos, M. W. (2011). "How smartphones are changing the face of mobile and participatory healthcare: An overview, with example from eCAALYX.". \textit{Biomedical engineering online} , 10, 101, 24.\par
+
+C. Hsiao, H. S. (2011). "Electronic Health Record Systems and Intent to Apply for meaningfull use Incentives among office based Physician practices". \textit{United States Health Journal} .\par
+
+C.M. Oliveira, F. T. (Dec 2013). "Adoption of an opthalmologic Electronic Record (Medisoft Ophthalmology) Case Study and Success Factors". \textit{Science Direct, vol. 9} , 1065-1073.\par
+
+C.V. Chan, D. K. (2009). "A technological selection framework for supporting delivery of patient-oriented health interventions in developing countries". \textit{Journal of Biomedical Informatics, vol. 43} , 300-306.\par
+
+Chang, L. (2011). \textit{slideshow-aids-retrospective}. Retrieved November 16, 2015, from webmd.com: http://www.webmd.com/hiv-aids/ss/slideshow-aids-retrospective\par
+
+D. Yoon, B. C. (Dec 2011). Adoption of electronic health records in Korean tertiary teaching and general hospitals. \textit{International journal of medical informatics} , 196-203.\par
+
+F. Williams, S. B. (2008). "The role of electronic medical record in care delivery in developing countries". \textit{International Journal of Information Management, vol. 28} , 503-507.\par
+
+G.D. Clifford, J. B.-C. (2008). "Medical information systems: a foundation for healthcare technologies in developing countries". \textit{BioMed Eng OnLine} .\par
+
+Greenhalgh. T, H. S. (2010). "Adoption, non-adoption, and abandonment of a personal electronic health record: case study of Health-Space". \textit{BMJ, VOL.341} , 5814.\par
+
+Ralston, A. R. (2003). \textit{Information Systems, Encyclopedia of Computer Science, 4th edition.} John Wiley and Sons Ltd.\par
+
+Steinbrook, R. (Feb 2009). "Health care and the American recovery and reinvestment Act". \textit{New England Journal of Medicine} , Vol.360, 1057-1060.\par
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\setlength{\parskip}{0.0pt}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\setlength{\parskip}{8.04pt}
+
+\vspace{\baselineskip}
+\end{document}
